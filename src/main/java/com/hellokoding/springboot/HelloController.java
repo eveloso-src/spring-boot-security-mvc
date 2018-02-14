@@ -25,6 +25,6 @@ public class HelloController {
 		log.info("details : " + auth.getDetails());	
 		
 		
-        return "hello";
+        return "hello1";
     }
 }
