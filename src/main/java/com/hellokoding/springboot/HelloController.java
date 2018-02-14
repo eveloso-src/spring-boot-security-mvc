@@ -17,7 +17,6 @@ public class HelloController {
     public String hello(Model model, @RequestParam(value="name", required=false, defaultValue="World") String name) {
         model.addAttribute("name", name);
         
-        
         org.springframework.security.core.Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 		log.info("usuario: " + auth.getPrincipal());
 		log.info("credentials: " + auth.getCredentials());
